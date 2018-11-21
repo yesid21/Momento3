@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalMomento3.Android", "Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalMomento3", "FinalMomento3\FinalMomento3\FinalMomento3.csproj", "{792A8384-67F7-48D9-B8D5-BE54A4148BC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalMomento3.Dominio", "FinalMomento3.Dominio\FinalMomento3.Dominio.csproj", "{4783AAA1-42B2-478F-8EA6-3CC6B50BCFFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{792A8384-67F7-48D9-B8D5-BE54A4148BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792A8384-67F7-48D9-B8D5-BE54A4148BC7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{792A8384-67F7-48D9-B8D5-BE54A4148BC7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4783AAA1-42B2-478F-8EA6-3CC6B50BCFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4783AAA1-42B2-478F-8EA6-3CC6B50BCFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4783AAA1-42B2-478F-8EA6-3CC6B50BCFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4783AAA1-42B2-478F-8EA6-3CC6B50BCFFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

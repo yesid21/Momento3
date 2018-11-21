@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalMomento3.Views.Camara"
+              xmlns:tdr="clr-namespace:FinalMomento3.Helpers"
+             Title="{tdr:Translate Camara}">
+    <ScrollView>
+        <StackLayout Spacing="10" Padding="10">
+            <Button x:Name="takePhoto" Text="{tdr:Translate TomarFoto}"/>
+            <Button x:Name="pickPhoto" Text="{tdr:Translate VerFoto}"/>
+            <Button x:Name="takeVideo" Text="{tdr:Translate TomarVideo}"/>
+            <Button x:Name="pickVideo" Text="{tdr:Translate VerVideo}"/>
+
+            <Image x:Name="image"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

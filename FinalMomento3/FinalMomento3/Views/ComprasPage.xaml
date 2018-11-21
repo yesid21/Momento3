@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalMomento3.Views.ComprasPage"
+             xmlns:tdr="clr-namespace:FinalMomento3.Helpers"
+             Title="{tdr:Translate CompraEnProceso}">
+    <Grid Margin="20" FlowDirection="LeftToRight">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Column="0" Grid.Row="0">
+            <Label Text="{tdr:Translate Nombre}" />
+            <Label Text="{tdr:Translate Descripcion}" />
+            <Label Text="{tdr:Translate Precio}" />
+            <Label Text="{tdr:Translate CantidadDeProductos}" />
+        </StackLayout>
+        <StackLayout Grid.Column="1" Grid.Row="0">
+            <Label Text="{Binding Nombre}" />
+                <Label Text="{Binding Descripcion}" />
+                <Label Text="{Binding Precio}"/>
+            
+        </StackLayout>
+        <StackLayout Grid.Column="0" Grid.Row="1" Grid.RowSpan="2">
+            <Entry x:Name="MiEntry" />
+            <Button Text="{tdr:Translate Continuar}" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

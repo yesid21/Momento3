@@ -1,3 +1,4 @@
+using FinalMomento3.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,14 +8,21 @@ namespace FinalMomento3
 {
 	public partial class App : Application
 	{
-		public App ()
-		{
-			InitializeComponent();
+        public static bool IsUserLoggedIn { get; set; }
 
-			MainPage = new MainPage();
-		}
+        public App()
+        {
+            if (!IsUserLoggedIn)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new InicioPage());
+            }
+        }
 
-		protected override void OnStart ()
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

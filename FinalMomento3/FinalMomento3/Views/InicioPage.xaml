@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalMomento3.Views.InicioPage"
+             xmlns:tdr="clr-namespace:FinalMomento3.Helpers"
+             Title="{tdr:Translate Productos}">
+    <ListView x:Name="listProductos" HasUnevenRows="True" ItemSelected="Product_Selected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Margin="20">
+                        <StackLayout Orientation="Vertical" >
+                            <Label Text="{Binding Nombre}" FontSize="25" FontAttributes="Bold" FontFamily="comic sans"/>
+                            
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{tdr:Translate DescripcionDelProducto}"/>
+                                <Label Text="{Binding Descripcion}"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{tdr:Translate PrecioDelProducto}"/>
+                                <Label Text="{Binding Precio}"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{tdr:Translate Referencia}"/>
+                            <Label Text="{Binding Referencia}"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
